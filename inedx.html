@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>Calculator</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <link rel="stylesheet" href="./main.css">
+  </head>
+  <body>
+    <div id="app">
+      <div class="grid">
+        <!--  <div class="display1">0</div> -->
+        <input type="text" v-model="current" placeholder="0" class="display2"> <!--поправить-->
+        <button @click="clear()" class="cell2 op"> C </button>
+        <button @click="input(op)" class="cell2 op" v-for="op in operators">{{op}}</button> 
+        <button @click="cal()" class="cell2 op"> = </button>     
+        <button @click="input(num)" class="cell num" v-for="num in numbers">{{num}}</button>
+      </div>
+
+
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
