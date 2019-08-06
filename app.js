@@ -21,14 +21,6 @@ new Vue ({
       this.current = eval(this.current);
     }
 
-    // function copyToClipboard (containerid) {
-  /* Create temporary textarea to copy text
-  let textarea = document.createElement('textarea')
-  textarea.id = 'temp_element'
-  textarea.style.height = 0
-  document.body.appendChild(textarea)
-  textarea.value = document.querySelector(".calculator__display--2").innerText*/
-  
-  }
+   }
 
 })
